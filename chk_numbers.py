@@ -2,7 +2,7 @@ import re
  
 def is_float(val):
     if isinstance(val, float): return True
-    if re.search(r'^\-{,1}[0-9]+\.{1}[0-9]+$', val): return True
+    if re.search(r'^((\-|\+)?[0-9]+)?\.{1}([0-9]+)?(e\-{,1}[0-9]+)?$', val): return True
  
     return False
  
